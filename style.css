@@ -1,0 +1,334 @@
+
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*---共通ボタン---*/
+
+.btn {
+  font-size: 12px;
+  color: white;
+  background-color: rgb(48, 200, 214);
+  min-width: 110px;
+  text-align:center;
+  line-height: 30px;
+  font-weight: bold;
+  border-radius: 5px;
+  border-style: none;
+}
+
+.btn:hover{
+   background-color:  #f5f7fa;
+}
+/*--header---*/
+
+.header {
+  background-color: antiquewhit;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  padding: 24px 32px;
+  position: fixed;
+  text-size-adjust: 100%;
+  width: 100%;
+  max-width: 1380px;
+  background-color: #f5f7fa;
+}
+
+
+.header__nav {
+  display: flex;
+}
+
+.header__nav--list {
+  display: flex;
+  align-items: center;
+}
+
+.header__nav--list__link a:hover{
+  background-color: #f5f7fa;
+  border-radius: 5px;
+  padding: px;
+}
+
+.header__nav--list__link p:hover{
+  background-color: #f5f7fa;
+  border-radius: 5px;
+  padding: px;
+}
+
+
+.header__nav--list__link a ,.header__nav--list__link p {
+  align-items: center;
+  font-size: 14px;
+  padding: 0 16px;
+  margin: 0 8px;
+  color: #2b546a;
+  text-decoration: none;
+  line-height: 40px;
+}
+
+span {
+  font-size: 5px;
+  padding: 8px;
+}
+
+.header__nav a {
+ align-items: center;
+ padding: 14px 20px;
+
+}
+
+.language-list {
+  box-shadow: rgba(0, 0, 0, 0.16);
+  display: none;
+  position: absolute;
+}
+
+.header__nav--list__ link{
+  padding: 14px 20px;
+  color: #2b546a;
+}
+
+
+/*---top---*/
+
+.top-wrapper {
+  background-color: #f5f7fa;
+  height: 500px;
+}
+
+.top-wrapper-logo {
+  display: flex;
+  padding-top:136px;
+  justify-content: center;
+}
+
+.top-wrapper-logo h1 {
+  align-items: center;
+}
+
+.top-wrapper-logo span {
+  font-size: 48px;
+  line-height: 72px;
+  color: #2b546a;
+  font-weight: bold;
+ text-align: center;
+}
+
+.service{
+  display: flex;
+  justify-content: center;
+  padding:33px 0 55px 0;
+}
+.service-user {
+  display: flex;
+}
+
+.service-user-name {
+  font-size: 13px;
+  color: #8491a5;
+  padding:3px 5px 0 5px;
+  font-weight: bold;
+}
+
+.service-user-count {
+  font-weight: bold;
+  font-size: 18px;
+  color: #2b546a;
+}
+.service-contry {
+  display: flex;
+  text-align: center;
+}
+
+.service-contry img {
+  height: 20px;
+}
+
+.service-contry-name {
+  font-size: 13px;
+  color: #8491a5;
+  padding:3px 5px 0 5px;
+  font-weight: bold;
+}
+
+.service-contry-count {
+  font-weight: bold;
+  font-size: 18px;
+  color: #2b546a;
+}
+
+.sign-up-start {
+  text-align: center;
+}
+
+.sign-up {
+  display: inline-block;
+  font-size: 14px;
+  color: white;
+  background-color: rgb(48, 200, 214);
+  line-height: 48px;
+  font-weight: bold;
+  border-radius: 5px;
+  border-style: none;
+  min-width: 200px;
+  text-decoration: none;
+  margin-bottom: 66px;
+}
+
+.sign-up:hover{
+  background-color: rgb(48, 200, 210);
+}
+
+.main {
+  text-align: center;
+}
+
+.main h1 {
+  font-size: 48px;
+  color: #2b546a;
+  text-align: center;
+  font-weight: bold;
+  padding: 105px 0 92px 0;
+}
+
+.main h2 {
+  font-size: 32px;
+  color: #2b546a;
+  font-weight: bold;
+  padding: 52px 0 38px 0;
+}
+
+.main p {
+  font-size: 16px;
+  color: #8491a5;
+  padding-bottom: 96px;
+}
+
+/*--サクセスストーリ--*/
+
+.success-story {
+ background-color: #2b546a;
+}
+
+.success-story-heading {
+  display: flex;
+  justify-content: center;
+}
+
+.success-story-heading span {
+  font-size: 32px;
+  color: #ffffff;
+  padding: 100px 0 36px 0;
+  text-align: center;
+  font-weight: bold;
+}
+
+.success-story-heading-text {
+  font-size: 16px;
+  color: #ffffff;
+  text-align: center;
+}
+
+/*--container--*/
+
+
+.success-story-container {
+  text-align: center;
+  display: grid;
+  flex-direction: column;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.succes-story-main {
+ border-radius: 9px;
+ flex-direction: column;
+ padding: 40px 24px;
+ max-width: 310px;
+ background-color: #ffffff;
+ height: 380px;
+ width: 290px;
+ display: grid;
+}
+
+.succes-story-main-text {
+  color: #2b546a;
+  font-weight: bold;
+  font-size: 16px;
+  text-decoration: none;
+  padding:50px 0 ;
+  line-height: 30px;
+}
+
+.succes-story-image-icon {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+
+.success-story-card-image {
+  display: flex;
+  text-align: center;
+  border : solid 1px
+}
+
+.succes-syory-main-name-title {
+  font-size: 16px;
+  color: #bac6d3;
+  font-weight: bold;
+  padding-top: 　10px;
+  padding-bottom: 13px;
+}
+
+.succes-syory-main-name-from {
+  font-size: 12px;
+  color: #bac6d3;
+}
