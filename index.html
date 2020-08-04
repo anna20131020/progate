@@ -4,9 +4,146 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="script.js">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 </head>
 <body>
-  <div></div>
+  <div class="header">
+   <img src="image/logo.svg" alt="progate-logo"　haight=30 width="120">
+   <div class=header__nav>
+     <ul class="header__nav--list">
+      <li class="header__nav--list__link"><a href="">法人プラン</a></li>
+      <li class="header__nav--list__link" id="language"><p>言語<span>▼</span></p></li>
+        <div class="language">
+          <ul class="language-list">
+            <li class="language-list-link"><a href="#">日本語</a></li>
+            <li class="language-list-link"><a href="#">English</a></li>
+          </ul>
+        </div>
+      <li class="header__nav--list__link"><a href="">ログイン</a></li>
+      <li>
+      <button class="btn">無料会員登録</button>
+      </li>
+     </ul>
+   </div>
+  </div>
+　
+  <div class="top-wrapper">
+   <h1 class="top-wrapper-logo">
+     <span>プログラミングで<br>人生の可能性を広げよう</span>
+   </h1>
+   <div class="service">
+      <div class="service-user">
+        <img src="image/users-f8349e783e2091f6e9d6a84d6cb914d0.svg" alt="ユーザー数" height="20px" width="16px">
+        <p class="service-user-count">1,600,000</p>
+        <p class="service-user-name">ユーザー</p>
+      </div>
+  　  <div class="service-contry">
+        <img src="image/countries-25dcf2bd3ea617a63080d7ac8e2baed4.svg" alt="ロゴ" height="20px" width="16px">
+        <p class="service-contry-name">提供国数</p>
+        <p class="service-contry-count">100+</p>
+     </div>
+   </div>
+   <div class="sign-up-start">
+    <a class="sign-up" href="">今すぐはじめる</a>
+   </div>
+  </div>
+  <div class="main-image">
+   <img src="image/スクリーンショット 2020-08-03 18.35.32.png" alt="メイン画像"　height=600 width="100%">
+  </div>
 
+ <div class="main">
+   <h1>初心者から作れる人に</h1>
+   <img src="image/slide_image_jp-fe8d53e1a8a892cd55002e6eed6c757e.jpg" alt="" height="470px" width="1000px">
+   <h2>イラスト中心のスライドで学ぶ</h2>
+   <p>紙の本よりも直感的で、動画よりも学びやすい、「スライド学習」を採用しました。<br>自分のペースで学習できること、復習しやすいことが強みです。</p>
+   <img src="image/editor_image_jp-e307f46bebad4e09782429be28dc21e6.jpg" alt="" height="547px" width="900px">
+   <h2>すぐに実践</h2>
+   <p>実際にプロダクトを作りながら学ぶから、使えるスキルが身につきます。<br>ブラウザ上で、コードを書いて結果も確認。準備いらずで、すぐにプログラミングが実践できます。</p>
+   <img src="image/app_image_jp-138257e7b2bbfa7c840ca9fcf7abc8b1.png" alt="" height="548px" width="997px">
+   <h2>道のりに沿って学ぶ</h2>
+   <p>「創れる人」になるために必要なレッスンを最適な順番で学ぶことができます。<br>最終的には自分自身でエラーを解決して、目標に向かって自ら走りきる能力が身につきます。</p>
+ </div>
+
+ <div class="success-story">
+    <h3 class="success-story-heading"><span>サクセスストーリー</span></h3>
+    <p class="success-story-heading-text">プログラミングの世界への第一歩を踏み出し、夢を実現した方々のサクセスストーリーを紹介します。</p>
+   <div class="success-story-container">
+     <a class="success-story-card" href="#">
+       <div class="succes-story-main">
+        <div class="succes-story-main-image"><img class="succes-story-image-icon" src="image/1570587077399.png" alt="" height="100px" width="100px"></div>
+        <p class="succes-story-main-text">「プログラミングで人生１８０度変わった。」小学生がJavaScriptでゲーム開発するする王になるまで</p>
+        <div class="succes-syory-main-name">
+          <p class="succes-syory-main-name-title">村馬弘一</p>
+          <p class="succes-syory-main-name-from">Japan</p>
+        </div>
+       </div>
+      </div>
+     </a>
+    <div class="success-story-container">
+      <a class="success-story-card" href="#">
+        <div class="succes-story-main">
+          <div class="succes-story-main-image"><img class="succes-story-image-icon" src="image/1566914605258.png" alt="" height="100px" width="100px"></div>
+          <p class="succes-story-main-text">「プログラミングはもうやりたくなかったけど必要に迫られて」mikanグロースハッカーの超実践SQL活用法</p>
+          <div class="succes-syory-main-name">
+            <p class="succes-syory-main-name-title">飯田　涼</p>
+            <p class="succes-syory-main-name-from">Japan</p>
+          </div>
+        </div>
+    </div>
+    </a>
+    <div class="success-story-container">
+      <a class="success-story-card" href="#">
+        <div class="succes-story-main">
+          <div class="succes-story-main-image"><img class="succes-story-image-icon" src="image/1565058933263.png" alt="" height="100px" width="100px"></div>
+          <p class="succes-story-main-text">「私、プログラミングできるかも。」アプリ版Progateから２ヶ月で、アイドルからエンジニアへに転職したわけ</p>
+          <div class="succes-syory-main-name">
+            <p class="succes-syory-main-name-title">五十嵐 夏菜</p>
+            <p class="succes-syory-main-name-from">Japan</p>
+          </div>
+        </div>
+    </div>
+    </a>
+    <div class="success-story-container">
+      <a class="success-story-card" href="#">
+        <div class="succes-story-main">
+          <div class="succes-story-main-image"><img class="succes-story-image-icon" src="image/1561420948224.jpg" alt="" height="100px" width="100px"></div>
+          <p class="succes-story-main-text">「起業準備はプロゲートしかしてません」YOURUST代表　岩崎岩崎由香のプログラミング勉強法</p>
+          <div class="succes-syory-main-name">
+            <p class="succes-syory-main-name-title">岩崎 由香</p>
+            <p class="succes-syory-main-name-from">Japan</p>
+          </div>
+        </div>
+    </div>
+    </a>
+    <div class="success-story-container">
+      <a class="success-story-card" href="#">
+        <div class="succes-story-main">
+          <div class="succes-story-main-image"><img class="succes-story-image-icon" src="image/1560417815612.jpg" alt="" height="100px" width="100px"></div>
+          <p class="succes-story-main-text">「夢みていたところでで働けるのは幸せです」プログラミング未経験者が憧れのBACEで働けるまで</p>
+          <div class="succes-syory-main-name">
+            <p class="succes-syory-main-name-title">三佐和 千鶴</p>
+            <p class="succes-syory-main-name-from">Japan</p>
+          </div>
+        </div>
+    </div>
+    </a>
+    <div class="success-story-container">
+      <a class="success-story-card" href="#">
+        <div class="succes-story-main">
+          <div class="succes-story-main-image"><img class="succes-story-image-icon" src="image/1570587077399.png" alt="" height="100px" width="100px"></div>
+          <p class="succes-story-main-text">「教育現場にエンジニア経験を還元したい！」元小学校教員エンジニアが叶えたい夢とは</p>
+          <div class="succes-syory-main-name">
+            <p class="succes-syory-main-name-title">三浦卓馬</p>
+            <p class="succes-syory-main-name-from">Japan</p>
+          </div>
+        </div>
+    </div>
+    </a>
+
+    </div>
+ 　</div>
+<script src="script.js"></script>
 </body>
 </html>
