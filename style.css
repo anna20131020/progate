@@ -74,7 +74,7 @@ table {
   display: flex;
   align-items: center;
   padding: 24px 32px;
-  position: fixed;
+  position: fixed; z-index: 1;
   text-size-adjust: 100%;
   width: 100%;
   max-width: 1380px;
@@ -256,6 +256,7 @@ span {
 
 .success-story {
  background-color: #2b546a;
+ width: 100%;
 }
 
 .success-story-heading {
@@ -279,24 +280,25 @@ span {
 
 /*--container--*/
 
-
 .success-story-container {
-  text-align: center;
-  display: grid;
-  flex-direction: column;
-  justify-content: center;
-  text-decoration: none;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 65px 190px 0 190px;
 }
 
 .succes-story-main {
  border-radius: 9px;
- flex-direction: column;
  padding: 40px 24px;
  max-width: 310px;
  background-color: #ffffff;
- height: 380px;
- width: 290px;
- display: grid;
+ height: 360px;
+ width: 270px;
+ margin:15px 11px;
+}
+
+.success-story-card {
+  justify-content: center;
+  text-decoration: none;
 }
 
 .succes-story-main-text {
@@ -306,6 +308,7 @@ span {
   text-decoration: none;
   padding:50px 0 ;
   line-height: 30px;
+  text-align: center;
 }
 
 .succes-story-image-icon {
@@ -314,10 +317,9 @@ span {
   height: 100px;
 }
 
-.success-story-card-image {
+.succes-story-main-image {
   display: flex;
-  text-align: center;
-  border : solid 1px
+  justify-content: center;
 }
 
 .succes-syory-main-name-title {
@@ -326,9 +328,316 @@ span {
   font-weight: bold;
   padding-top: 　10px;
   padding-bottom: 13px;
+  text-align: center;
 }
 
 .succes-syory-main-name-from {
   font-size: 12px;
   color: #bac6d3;
+  text-align: center;
+}
+
+
+.succes-story-btn-text {
+  display: inline-block;
+ background-color: white;
+  color: #2b546a;
+  height: 20px;
+  width: 200px;
+  font-weight: bold;
+  font-size: 14px;
+  border-radius: 7px;
+  text-align: center;
+  padding: 20px;
+}
+
+.succes-story-link {
+  margin-top :10px;
+  margin-bottom: 70px;
+  display: flex;
+  justify-content: center;
+}
+
+.succes-story-link-btn {
+  padding:15px 50px;
+  background-color: white;
+  border-radius: 7px;
+  text-decoration: none;
+  color: #2b546a;
+  font-weight: bold;
+  float: center;
+}
+
+.success-story-card:hover {
+  transform: scale(1.01) translate3d(0, -2px, 0);
+  transition: 0.5s;
+}
+
+
+.lesson-plan {
+  justify-content: center;
+  margin: 98px 206px;
+}
+
+
+.lesson-plan-imege {
+  border-radius: 10px;
+  margin-bottom: 40px;
+}
+
+.nunber-registration-list{
+  display: grid;
+ grid-template-columns: 1fr 1fr;
+ gap: 30px;
+}
+
+.nunber-registration-list-free {
+  height: 434px;
+  width: 470px;
+  background-color: #f5f7fa;
+  border-radius: 10px;
+}
+
+.nunber-registration-list-pay {
+   height: 434px;
+  width: 470px;
+  background-color: #f7edad;
+  border-radius: 10px;
+}
+
+.nunber-registration-list-logo {
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 93px;
+  color: #2b546a;
+}
+
+.nunber-registration-list-text {
+  font-size: 16px;
+  color: #bac6d3;
+  line-height: 2;
+  text-align: center;
+  margin: 35px 0 30px 0;
+}
+
+.nunber-registration-list-lesson {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  color: #2b546a;
+  line-height: 2;
+}
+
+.nunber-registration-list-lesson-oll {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  color: #2b546a;
+  margin-top: 70px;
+}
+
+.nunber-registration-list-price {
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  color: #2b546a;
+  margin-top: 20px;
+}
+
+.nunber-registration-list-price-text {
+  font-size: 18px;
+  color: #2b546a;
+}
+
+
+
+.nunber-registration-list-price-number {
+  font-size: 48px;
+  color: #2b546a;
+}
+
+.lesson-releaseーstatus{
+  margin-top: 40px;
+}
+
+.lesson-releaseーstatus a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #005cac;
+}
+
+
+.app-container {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.app-container-logo {
+  font-size: 32px;
+  color: #2b546a;
+  font-weight: bold;
+}
+
+.app-container-text {
+  color: #8491a5;
+  margin: 38px 0 63px 0;
+}
+
+
+.app-container-downroad {
+  display: flex;
+  height: 595px;
+  max-width: 900px;
+  background-color: #90c3f0;
+  text-align: center;
+  padding: 64px 64px 0;
+  border-radius: 5px;
+}
+
+.app-container-downroad-wrapper {
+  text-align: left;
+  max-width: 340px;
+}
+
+.app-container-downroad-wrapper-heading {
+  font-size: 20px;
+  color: #ffffff;
+  font-weight: bold;
+  margin: 0 0 27px 0;
+}
+
+.app-container-downroad-wrapper-text {
+  font-size: 14px;
+  color: #ffffff;
+  line-height: 2;
+  margin-bottom: 28px;
+}
+
+
+.app-container-downroad-link {
+  margin-top: 240px;
+}
+
+.container-downroad-link-google {
+  border-radius: 5px;
+}
+
+.concept {
+  background-color: #ffffff;
+  align-items: center;
+}
+
+.concept-wrapper {
+  margin: 132px 0;
+}
+.concept-wrapper-heading {
+  font-size: 32px;
+  color: #2b546a;
+  font-weight: bold;
+}
+
+.concept-wrapper-text {
+  font-size: 16px;
+  color: #8491a5;
+  margin-top: 43px;
+  line-height: 2;
+}
+
+.feature {
+  background-color: aliceblue;
+  width: 100%;
+  height: 431px;
+}
+
+
+
+.feature-wrapper-logo {
+  font-size: 32px;
+  font-weight: bold;
+  color: #2b546a;
+  letter-spacing: 2px;
+  margin-top: 135px;
+}
+
+.feature-wrapper-text {
+  font-size: 16px;
+  color: #8491a5;
+  margin-top: 39px;
+}
+
+.feature-wrapper-btn {
+  background-color: rgb(48, 200, 214);
+  padding: 16px 59px;
+  border-radius: 10px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #ffffff;
+  margin-top: 49px;
+  display: inline-block;
+}
+
+.sns {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0;
+}
+
+.sns-icon {
+  margin: 0 20px;
+}
+
+footer {
+  border-top: 1px solid #bac6d3;
+  width: 100%;
+  display: flex;
+}
+
+.footer-content {
+  display: flex;
+  margin: 54px 119px 54px 119px;;
+}
+
+.footer-content-left-logo {
+  margin: 0 238px 102px 0;
+}
+
+.footer-content-left-app {
+  color: #8491a5;
+  margin-bottom: 17px;
+  text-align: left;
+}
+
+.footer-content-left-app-icon {
+  float: left;
+  margin-bottom: 128px;
+}
+
+.footer-content-left-copyright {
+  font-size: 10px;
+  color: #bac6d3;
+  font-weight: bold;
+  letter-spacing: 2px;
+  display: inline-block;
+}
+
+.footer-seavice {
+  text-align: left;
+
+}
+
+.footer-seavice h5 {
+  font-size: 17px;
+  color: #2b546a;
+}
+
+.footer-seavice-list a{
+  font-size: 12px;
+  color: #8491a5;
+  text-decoration: none;
+  letter-spacing: 2px;
 }
